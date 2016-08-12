@@ -204,6 +204,8 @@ public class LocationModule extends ReactContextBaseJavaModule {
     coords.putDouble("speed", location.getSpeed());
     map.putMap("coords", coords);
     map.putDouble("timestamp", location.getTime());
+    testing
+    map.putBoolean("mocked", location.isFromMockProvider());
     return map;
   }
 
